@@ -1,13 +1,92 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    background-color: violet;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 28px rgba(128, 128, 128, 0.589);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 4pc;
+    height: 4pc;
+}
+h4{ 
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 5px;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 6pc;
+    width: 100%;
+}
+input{
+    padding: 10px;
+    margin: 5px 5px;
+    outline: none;
+    border: 1px solid grey;
+    text-align: center;
+}
+button{
+    /* width: 25%; */
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(238, 130, 238, 0.644);
+}
+button:hover{
+    background-color: rgb(238, 130, 238);
+    color: white;
+} 
+.meme-image
+{
+    width: 400px;
+    height: 50vh;
+    margin-top: 10px;
+}
+.changes{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    position: absolute;
+    top: 1pc;
+    left: 7pc;
+}
+h5{
+    position: absolute;
+    top: 13pc;
+    left: 7pc;
+    font-size: 30px;
+}
+@media screen and (max-width:410px){
+    .meme-image{
+        width: 300px;
+        height: 50vh;
+    }
+    .logo{
+        width: 3pc;
+        height: 3pc;
+    }
 }
